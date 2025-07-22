@@ -1,3 +1,13 @@
-console.log("Céline startet ihre Reise …");
+const config = {
+  type: Phaser.AUTO,
+  width: 320,
+  height: 240,
+  backgroundColor: "#222222",
+  scene: {
+    create: function () {
+      this.add.text(100, 100, "Hallo Céline! 🎮", { font: "16px Arial", fill: "#ffffff" });
+    }
+  }
+};
 
-// Hier wird später Phaser-Code eingefügt: Szene, Musik, Bewegung, Dialoge, etc.
+new Phaser.Game(config);
